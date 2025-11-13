@@ -1,0 +1,74 @@
+For BT-User configuration file :
+------------------- 
+git config --global user.name "abcd"
+git config --global user.name.email "abcd@gmail.com"
+
+#mkdir <dirname>
+#cd <dirname>
+vi index.htmal
+
+Commands:
+---------
+git init - Initialize a new Git repository.
+git clone <repo-url> - Clone a remote repository.
+
+git add filename
+git add .
+git status
+
+git branch
+git checkout -b hello
+git checkout hello
+git branch -d hello
+git push origin hello
+git push origin --delete hello
+git remote add origin https://github.com/cloudmani/sep16.git
+git commit -m "second file"
+git push -u origin main
+git pull
+git log
+
+git branch -d newvery
+
+
+
+git fetch origin
+git checkout -b hi origin/hi  # Creates a local branch tracking the remote one
+git checkout main  # or dev or whatever your base branch is
+git merge hi
+
+
+
+# Step 1: Checkout main branch
+git checkout main
+
+# Step 2: Pull latest changes
+git pull origin main
+
+# Step 3: Merge 'hi' into 'main'
+git merge hi
+
+# Step 4: Push merged changes to GitHub
+git push origin main
+
+------------------------------------------------------------
+git remote remove origin
+
+git remote add origin git@github.com:PoovendranR/My-first-repo.git         ////add the correct SSH remote:
+
+
+or
+
+git remote set-url origin git@github.com:PoovendranR/firs.git			////add the correct SSH remote:
+ 
+
+git remote -v
+
+git push -u origin main
+----------------------
+ Merge hello -> main
+git checkout main
+git pull origin main      # keep main updated
+git merge hello           # merge hello into main
+git push origin main      # push updated main to GitHub
+

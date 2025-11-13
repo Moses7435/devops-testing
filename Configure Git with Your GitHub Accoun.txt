@@ -1,0 +1,53 @@
+Configure Git with Your GitHub Account
+
+	git config --global user.name "YourGitHubUsername"
+	git config --global user.email "youremail@example.com"
+
+	git config --list
+
+Generate and Add SSH Key to GitHub
+
+Generate SSH Key
+
+	$ ssh-keygen -t rsa -b 4096 -C "poovendranraman@gmail.com"
+
+	cat ~/.ssh/id_rsa.pub
+
+*****
+
+Copy the full output.
+
+Go to GitHub → Settings → SSH and GPG Keys → New SSH Key
+
+Title: MyLaptop (or any name)
+
+Paste the copied key ***
+
+Save
+
+Test Connection
+
+	ssh -T git@github.com
+
+----------------------------------
+mkdir my-first-repo
+cd my-first-repo
+git init
+
+echo "Hello GitHub from SRM!" > hello.txt
+
+
+git clone 
+
+git checkout -b feature
+
+git add 
+
+ git add practice.txt
+ git commit -m "add my new file"
+ git push -u origin  [or ] git remote add origin git@github.com:PoovendranR/my-first-repo.git
+
+
+
+
+
